@@ -6,6 +6,7 @@ class Artist(models.Model):
     def __str__(self):
         return self.name
 
+
 class Music(models.Model):
     artist = models.ForeignKey(Artist, on_delete=models.CASCADE)
     title = models.TextField()
